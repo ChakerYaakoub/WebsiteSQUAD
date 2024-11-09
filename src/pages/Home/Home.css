@@ -1,0 +1,64 @@
+.home-container1 {
+  position: relative; /* Allow absolute positioning of child elements */
+  text-align: center; /* Center text horizontally */
+}
+
+.home-container1 h2 {
+  position: absolute; /* Position the h1 over the image */
+  top: 50%; /* Center vertically */
+
+  margin: auto; /* Center using margin auto */
+  color: white; /* Change text color for visibility */
+  animation: fadeIn 2s; /* Add animation */
+  font-size: 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-container1 h1 {
+  position: absolute; /* Position the h1 over the image */
+  top: 10%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+
+  margin: auto; /* Center using margin auto */
+  color: white; /* Change text color for visibility */
+  animation: fadeIn 2s; /* Add animation */
+  font-size: 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero {
+  padding-block: var(--section-padding);
+}
+.hiddenInPc {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .home-container1 h1 {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+    padding: 10px; /* Add padding for better readability */
+  }
+  .hiddenInPc {
+    display: block;
+  }
+  .home-container1 h2 {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+    padding: 10px; /* Add padding for better readability */
+  }
+  .hero {
+    padding-block: 0;
+    padding-block-start: 90px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start transparent */
+  }
+  to {
+    opacity: 1; /* End fully visible */
+  }
+}
+
+/*-----------------------------------*\
+    #MEDIA QUERIES
+  \*-----------------------------------*/

@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# SQUAD - Computer Science Department Website (University of Corsica) - English Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository hosts a demo project developed using **React** and **TypeScript** for the Computer Science Department at the University of Corsica Pascal Paoli. The project serves as a prototype for a department website, emphasizing responsive design and modern frontend development practices.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The **SQUAD** website is designed to offer users a straightforward and accessible interface for exploring department information, events, news, and academic resources. This project is part of an English test, showcasing both the structure and content in English.
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Check out the live demo of the project [here](https://your-live-demo-link.com).
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Responsive Design**: Provides optimal viewing across various devices (desktop, tablet, and mobile).
+- **Modular Components**: Employs reusable components for improved efficiency and maintainability.
+- **Type Safety**: Developed with TypeScript to ensure type-checking and minimize errors.
+- **Clean Layout**: Features a simple, intuitive design focused on user experience and easy navigation.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Tech Stack
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **React**: Utilized for creating dynamic and interactive UI components.
+- **TypeScript**: Used to enhance code reliability through static typing.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Setup & Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/squad-website.git
+   cd squad-website
+   ```
+
+2. Install dependencies and start the project:
+   ```bash
+   npm install
+   npm start
+   ```
+
+This setup section now includes all steps in a consistent, clear flow. Let me know if you'd like further customization.
