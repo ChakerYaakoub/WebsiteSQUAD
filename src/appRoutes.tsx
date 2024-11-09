@@ -5,9 +5,9 @@ import ViewAllNews from "./pages/ViewAll/ViewAllNews";
 
 const appRoutes = [
   { path: "/WebsiteSQUAD", element: <Home /> },
-  { path: "/WebsiteSQUAD/view-all/overview", element: <ViewAllNews /> },
+  { path: "/WebsiteSQUAD/view-all/students", element: <ViewAllNews /> },
   {
-    path: "/WebsiteSQUAD/overview/:id/:title",
+    path: "/WebsiteSQUAD/students/:id/:title",
     element: <WorkspaceDescriptionPage />,
   },
 

@@ -5,14 +5,14 @@
 // later on try to use the same names CollectionName name and href value where you initialise  of the project
 export enum NavItemsEnum {
   UserInfo = "home",
-  Overview = "overview",
+  Overview = "students",
   AboutUs = "about",
   ContactUs = "contact",
 }
 
 export const navItems = [
   { href: "#home", text: NavItemsEnum.UserInfo },
-  { href: "#overview", text: NavItemsEnum.Overview },
+  { href: "#students", text: NavItemsEnum.Overview },
   { href: "#about", text: NavItemsEnum.AboutUs },
   { href: "#contact", text: NavItemsEnum.ContactUs },
 ];

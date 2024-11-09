@@ -25,7 +25,11 @@ const Home: React.FC<HomeProps> = (props) => {
         </div>
       </section>
 
-      <Overview data={data} subtitle="Overview" title="Overview" />
+      <Overview
+        data={data}
+        subtitle="Master Class 2024 -2025"
+        title="Computer Science Students"
+      />
       <AboutUs aboutUs={aboutUs} />
       <ContactUs contactUs={contactUs} />
     </div>

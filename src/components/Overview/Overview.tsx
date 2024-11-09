@@ -32,7 +32,7 @@ const Overview: React.FC<OverviewProps> = (props) => {
 
           <div className="view-all-button-container">
             <Link
-              to={`/view-all/${NavItemsEnum.Overview}`}
+              to={`view-all/${NavItemsEnum.Overview}`}
               className="view-all-button"
             >
               View All

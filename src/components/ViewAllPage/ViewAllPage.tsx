@@ -54,9 +54,9 @@ const ViewAllPage: React.FC<ViewAllPageProps> = (props) => {
 
                   <div className="card-content">
                     <Link
-                      to={`/overview/${content.id}/${createUrlFriendlyString(
-                        content.fullName
-                      )}`}
+                      to={`/WebsiteSQUAD/students/${
+                        content.id
+                      }/${createUrlFriendlyString(content.fullName)}`}
                       className="card-link-to"
                       onClick={(event) =>
                         disabledLink ? event.preventDefault() : null
@@ -70,9 +70,9 @@ const ViewAllPage: React.FC<ViewAllPageProps> = (props) => {
                     <p className="card-text ">
                       {content.brief.slice(0, 60)}...
                       <Link
-                        to={`/overview/${content.id}/${createUrlFriendlyString(
-                          content.fullName
-                        )}`}
+                        to={`/WebsiteSQUAD/students/${
+                          content.id
+                        }/${createUrlFriendlyString(content.fullName)}`}
                         className="card-link-to inline-block disableToUppercase"
                         onClick={(event) =>
                           disabledLink ? event.preventDefault() : null

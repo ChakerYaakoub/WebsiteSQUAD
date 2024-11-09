@@ -9,7 +9,7 @@ const NotFound404: React.FC<NotFound404Props> = (props) => {
   const {} = useNotFound404(props);
 
   return (
-    <section className=" newPageSection" id="MyNotfound">
+    <div className=" newPageSection" id="MyNotfound">
       <div className="MyNotfound">
         <div className="MyNotfound-404">
           <h1>OOPS!</h1>
@@ -18,7 +18,7 @@ const NotFound404: React.FC<NotFound404Props> = (props) => {
 
         <Link to={"/WebsiteSQUAD"}> GO TO HOMEPAGE</Link>
       </div>
-    </section>
+    </div>
   );
 };
 

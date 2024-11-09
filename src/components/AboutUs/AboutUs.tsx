@@ -4,7 +4,7 @@ import "./AboutUs.css";
 import { NavItemsEnum } from "../../utils/navItems";
 
 const AboutUs: React.FC<AboutUsProps> = (props) => {
-  const { about } = useAboutUs(props);
+  const { about, about2 } = useAboutUs(props);
 
   return (
     <>
@@ -22,13 +22,17 @@ const AboutUs: React.FC<AboutUsProps> = (props) => {
             {/* <p> */}
             {about.trim().length > 0 ? (
               <div
-                className="descriptionText"
+                className="descriptionText hiddenInMobileAboutUs "
                 dangerouslySetInnerHTML={{ __html: about }}
               />
             ) : (
               "About us details will be added soon."
             )}
           </div>
+          <div
+            className="descriptionText hiddenInPcAboutUs"
+            dangerouslySetInnerHTML={{ __html: about2 }}
+          />
         </div>
       </section>
     </>

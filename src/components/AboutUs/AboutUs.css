@@ -5,6 +5,26 @@
   margin-top: 20px;
 }
 
+.hiddenInPcAboutUs {
+  display: none;
+}
+
+.hiddenInMobileAboutUs {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hiddenInPcAboutUs {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .hiddenInMobileAboutUs {
+    display: block;
+  }
+}
+
 /* Style paragraphs */
 #about-us p {
   /* Add padding at the beginning of each paragraph */
