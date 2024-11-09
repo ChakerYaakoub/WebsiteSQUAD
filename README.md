@@ -8,7 +8,7 @@ The **SQUAD** website is designed to offer users a straightforward and accessibl
 
 ## Live Demo
 
-Check out the live demo of the project [here](https://your-live-demo-link.com).
+Check out the live demo of the project [here](https://chakeryaakoub.github.io/WebsiteSQUAD/).
 
 ## Features
 

@@ -1,5 +1,3 @@
-import { WorkingPeriod } from "../models/DefaultUserData";
-
 export const monthNames = [
   "January",
   "February",
@@ -52,64 +50,9 @@ export const calculateDuration = (
 // Function to sort data by start date first, then prioritize current periods
 // this is the old version
 // sort by start date first, then prioritize current periods
-export const sortDataByDate2 = (data: WorkingPeriod[]): WorkingPeriod[] => {
-  const dataCopy = [...data];
-  return dataCopy.sort((a, b) => {
-    // Convert start dates to comparable values (months since January 1970)
-    const aStartDate = a.yearStartDate * 12 + a.monthStartDate;
-    const bStartDate = b.yearStartDate * 12 + b.monthStartDate;
-
-    // Sort by start date (most recent first)
-    if (aStartDate !== bStartDate) {
-      return bStartDate - aStartDate;
-    }
-
-    // If start dates are the same, prioritize current periods
-    if (a.current && !b.current) return -1;
-    if (!a.current && b.current) return 1;
-
-    // If both or neither are current, sort by end date (most recent first)
-    const aEndDate = a.current
-      ? Infinity
-      : (a.yearEndDate ?? 0) * 12 + (a.monthEndDate ?? 0);
-    const bEndDate = b.current
-      ? Infinity
-      : (b.yearEndDate ?? 0) * 12 + (b.monthEndDate ?? 0);
-
-    return bEndDate - aEndDate;
-  });
-};
 
 // this is the new version
 // prioritize current periods first, then sort by start date
-
-export const sortDataByDate = (data: WorkingPeriod[]): WorkingPeriod[] => {
-  const dataCopy = [...data];
-  return dataCopy.sort((a, b) => {
-    // If one is current and the other is not, prioritize the current one
-    if (a.current && !b.current) return -1;
-    if (!a.current && b.current) return 1;
-
-    // Convert start dates to comparable values (months since January 1970)
-    const aStartDate = a.yearStartDate * 12 + a.monthStartDate;
-    const bStartDate = b.yearStartDate * 12 + b.monthStartDate;
-
-    // For current periods, sort by most recent start date (most recent first)
-    if (a.current && b.current) {
-      return bStartDate - aStartDate;
-    }
-
-    // For non-current periods, sort by end date (most recent first)
-    const aEndDate = a.current
-      ? Infinity
-      : (a.yearEndDate ?? 0) * 12 + (a.monthEndDate ?? 0);
-    const bEndDate = b.current
-      ? Infinity
-      : (b.yearEndDate ?? 0) * 12 + (b.monthEndDate ?? 0);
-
-    return bEndDate - aEndDate;
-  });
-};
 
 export function replaceNewlinesWithBr(text: string): string {
   // console.log(text);

@@ -16,7 +16,7 @@ const NotFound404: React.FC<NotFound404Props> = (props) => {
           <h2>404 - THE PAGE CAN'T BE FOUND</h2>
         </div>
 
-        <Link to={"/"}> GO TO HOMEPAGE</Link>
+        <Link to={"/WebsiteSQUAD"}> GO TO HOMEPAGE</Link>
       </div>
     </section>
   );

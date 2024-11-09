@@ -4,11 +4,14 @@ import NotFound404 from "./pages/NotFound404/NotFound404";
 import ViewAllNews from "./pages/ViewAll/ViewAllNews";
 
 const appRoutes = [
-  { path: "/", element: <Home /> },
+  { path: "/WebsiteSQUAD", element: <Home /> },
+  { path: "/WebsiteSQUAD/view-all/overview", element: <ViewAllNews /> },
+  {
+    path: "/WebsiteSQUAD/overview/:id/:title",
+    element: <WorkspaceDescriptionPage />,
+  },
 
   { path: "*", element: <NotFound404 /> },
-  { path: "/view-all/overview", element: <ViewAllNews /> },
-  { path: "/overview/:id/:title", element: <WorkspaceDescriptionPage /> },
 ];
 
 export default appRoutes;

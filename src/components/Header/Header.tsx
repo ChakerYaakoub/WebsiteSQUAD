@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = (props) => {
       data-header
     >
       <div className="container">
-        <Link to={"/"} className="logoDiv">
+        <Link to={"/WebsiteSQUAD"} className="logoDiv">
           <img src={logo} alt="Logo" className="logoImage" />
         </Link>
 
@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = (props) => {
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link
-                  to={`/${item.href}`}
+                  to={`/WebsiteSQUAD/${item.href}`}
                   className="navbar-link"
                   data-nav-link
                   // onClick={(event) => handleClick(event, item.href)}
