@@ -14,9 +14,9 @@ const AboutUs: React.FC<AboutUsProps> = (props) => {
         aria-label="about"
       >
         <div className="container">
-          <p className="section-subtitle">About us </p>
+          <p className="section-subtitle">About</p>
 
-          <h2 className="h2 section-title"> Get to Know Us</h2>
+          <h2 className="h2 section-title">Purpose of This Site</h2>
 
           <div className="about-us" id="about-us">
             {/* <p> */}

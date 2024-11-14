@@ -35,6 +35,18 @@ export const data = [
     date: "Wed Nov 09 2024",
   },
   {
+    id: "7",
+    fullName: "Chaker Yaakoub",
+    brief: "Specializes in full-stack web and mobile development.",
+    description:
+      "Specializes in full-stack web and mobile development. Eager to learn and build new tools. Chaker has a diverse skill set that includes both front-end and back-end development. He enjoys creating applications that provide a great user experience while ensuring robust functionality. Chaker is proficient in programming languages such as JavaScript, HTML, and CSS, and has experience with frameworks like React and Node.js. He believes in writing clean and maintainable code and follows best practices in software development. Chaker is also interested in mobile development and has experience building applications for both Android and iOS platforms. He enjoys collaborating with cross-functional teams to deliver high-quality products and is always looking for opportunities to learn and grow in his field. In his spare time, Chaker likes to work on personal projects and contribute to open-source initiatives. He is passionate about technology and is excited about the future of web and mobile development.",
+    photo: ChakerYaakoub,
+    email: "chakeryb.work@hotmail.com.com",
+    phoneNumber: "+33621332338",
+    address: "159 Innovation Way, Informatique City",
+    date: "Wed Nov 09 2024",
+  },
+  {
     id: "19",
     fullName: "Theo",
     brief: "Blockchain developer exploring decentralized applications.",
@@ -136,18 +148,7 @@ export const data = [
     address: "987 Data Drive, Informatique City",
     date: "Wed Nov 09 2024",
   },
-  {
-    id: "7",
-    fullName: "Chaker Yaakoub",
-    brief: "Specializes in full-stack web and mobile development.",
-    description:
-      "Specializes in full-stack web and mobile development. Eager to learn and build new tools. Chaker has a diverse skill set that includes both front-end and back-end development. He enjoys creating applications that provide a great user experience while ensuring robust functionality. Chaker is proficient in programming languages such as JavaScript, HTML, and CSS, and has experience with frameworks like React and Node.js. He believes in writing clean and maintainable code and follows best practices in software development. Chaker is also interested in mobile development and has experience building applications for both Android and iOS platforms. He enjoys collaborating with cross-functional teams to deliver high-quality products and is always looking for opportunities to learn and grow in his field. In his spare time, Chaker likes to work on personal projects and contribute to open-source initiatives. He is passionate about technology and is excited about the future of web and mobile development.",
-    photo: ChakerYaakoub,
-    email: "chakeryb.work@hotmail.com.com",
-    phoneNumber: "+33621332338",
-    address: "159 Innovation Way, Informatique City",
-    date: "Wed Nov 09 2024",
-  },
+
   {
     id: "8",
     fullName: "Donat",
